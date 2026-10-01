@@ -15,12 +15,12 @@ The application features a simple but effective UI: an "Add Axis" button that in
 
 ## Features
 
-- **Dynamic Axis Rendering** — Leverage Blazor's reactive data binding to add axes without page reloads or manual DOM manipulation
-- **Blazor Circular Gauge Integration** — Pre-configured, production-ready component with built-in styling and customization options
-- **Interactive UI Controls** — Click-driven interface to demonstrate real-time component updates and state management
-- **Clean, Minimal Design** — Focused example code with proper separation of concerns, easy to understand and extend
-- **Blazor Server Rendering** — Full server-side rendering with automatic HTML client-side interactivity out of the box
-- **Styled Axes** — Customizable axis styling including line width, color, and tick positioning
+- **Dynamic Axis Rendering** - Leverage Blazor's reactive data binding to add axes without page reloads or manual DOM manipulation
+- **Blazor Circular Gauge Integration** - Pre-configured, production-ready component with built-in styling and customization options
+- **Interactive UI Controls** - Click-driven interface to demonstrate real-time component updates and state management
+- **Clean, Minimal Design** - Focused example code with proper separation of concerns, easy to understand and extend
+- **Blazor Server Rendering** - Full server-side rendering with automatic HTML client-side interactivity out of the box
+- **Styled Axes** - Customizable axis styling including line width, color, and tick positioning
 
 ## Prerequisites
 
@@ -54,8 +54,17 @@ dotnet restore
 dotnet run
 ```
 
-## References
+## Project Structure
 
-**Documentation**: https://blazor.syncfusion.com/documentation/circular-gauge/axes
+`Components/Pages/Home.razor` - Main sample page containing the `@page "/"` route. Hosts the `SfCircularGauge` component, renders multiple `CircularGaugeAxis` elements through a `foreach` loop, maintains the `AxesMaximum` collection, and dynamically adds new axes through the `AddClick()` event handler.
 
-**Online example**: https://blazor.syncfusion.com/demos/circular-gauge/default-functionalities?theme=fluent2
+## Support and Feedback
+
+- For general product questions, visit the [Syncfusion Community Forum](https://www.syncfusion.com/forums) or [Syncfusion Support](https://www.syncfusion.com/support).
+- To report an issue specific to this sample, open a GitHub issue in this repository.
+- Refer to the Syncfusion Circular Gauge documentation: https://help.syncfusion.com/chart-sdk/blazor/circular-gauge/getting-started
+- Refer to the Syncfusion Circular Gauge example: https://blazor.syncfusion.com/demos/circular-gauge/default-functionalities?theme=fluent2
+
+## License
+
+This is a Syncfusion sample project provided to demonstrate product usage. Review the [Syncfusion license terms](https://www.syncfusion.com/sales/pricing?category=ui-components) before using Syncfusion components in your own applications.
